@@ -35,3 +35,63 @@ a:hover, a:focus {
 a:active {
     color: turquoise;
 }
+/* NAV */
+.page-header {
+    display: flex;
+    width: 100%;
+    padding: 0 10px 0 0;
+}
+.page-header__item {
+    flex: 0 1 200px;
+}
+
+.main-navigation{
+    flex-grow: 1;
+    text-align: right;
+}
+.navigation__logo {
+    left: 20px;
+    height: 50px;
+}
+.navigation-list{
+    list-style-type: none;
+}
+.navigation-list li {
+    display: inline-block;
+    margin-left:4px; 
+}
+.navigation-list__item--active {
+    text-decoration: none;
+}
+.hr-break{
+    border: lightgrey 1px solid;
+    margin: 0 -15px 0 -15px;
+}
+
+/* Home page content */
+.profile {
+    max-width: 700px;
+    margin: 20px auto;
+    box-sizing: border-box;
+
+}
+.profile__portrait {
+    float: left;
+    width: 350px;
+    margin-right: 40px;
+    border-radius: 50%;
+}
+.profile-description{
+    padding-top: 50px;
+}
+.B-Btext{   
+    background-color: black;
+    color: white
+}
+
+/* footer */
+footer {
+    clear: both;
+    text-align: center;
+    margin-top: 80px;
+}
