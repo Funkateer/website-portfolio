@@ -182,7 +182,6 @@ footer {
         grid-column: auto / auto;
         grid-row: auto / auto;
     } 
-
 }
 @media all and (max-width: 500px) {
     .page-header{
