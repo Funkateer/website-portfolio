@@ -118,6 +118,20 @@ button:focus {
     margin: 12px auto;
 }
 
+/* Contact page content */
+.contact {
+    max-width: 30vw;
+    margin: 70px auto;
+  }
+#contact-form{
+    margin-top: 50px;
+}
+
+#contact-mes{
+    width: 400px;
+    height: 200px;
+}
+
 /* footer */
 footer {
     clear: both;
