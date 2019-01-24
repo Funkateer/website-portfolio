@@ -1,31 +1,50 @@
+/*
+Colors used 
+Primary Color:   
+Secondary Color:
+Text Color:   
+
+text-font-body:'Noto Serif TC', serif;
+*/
+:root {
+    --primary-color: #357b70;
+    --secondary-color: #489c79;    
+    --shadow: 4px 3px 19px 0px rgba(0,0,0,0.3);
+    --weight-bold: 700;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background: #ffffff;
+    background: #dfdfdf;
+    font-family: 'Noto Serif TC', serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 1.6;
     margin: 1%;
     height: 100vh;
 }
-
 h1 {
     font-size: 30px;
-    font-weight: 700;
+    font-weight: var(--weight-bold);
 }
 h2 {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: var(--weight-bold);
 }
 h3 {
     font-size: 18px;
-    font-weight: 700;
+    font-weight: var(--weight-bold);
 }
 
 a {
-    color: teal;
+    color: var(--primary-color);
     transition: 1s opacity;
 }
 a:visited {
-    color: teal;
+    color: var(--secondary-color);
 }
 a:hover, a:focus {
     text-decoration: none;
@@ -33,14 +52,14 @@ a:hover, a:focus {
     transition: 0.4s opacity;
 }
 a:active {
-    color: turquoise;
+    color: var(--secondary-color);
 }
 .button,
 button {
     border: none;
     display: inline-block;
     font-family: inherit;
-    background-color:teal;
+    background-color: var(--primary-color);
     color: white;
     text-decoration: none;
     padding: 8px;
@@ -55,6 +74,7 @@ button:focus {
     cursor: pointer;
     opacity: 0.8;
 }
+
 /* NAV */
 .page-header {
     display: flex;
@@ -104,21 +124,19 @@ button:focus {
 .profile-description{
     padding-top: 50px;
 }
-.B-Btext{   
+.B-Btext{
     background-color: black;
-    color: white;
+    color: var(--primary-color);
 }
 
 /* About page content */
 .about-container{
     display: grid;
-    
 }
 .about-container__item{
     list-style-type: circle;
     margin: 12px auto;
 }
-
 /* Works page content */
 .project-list__item{
     display: inline-block;
@@ -138,12 +156,7 @@ button:focus {
     grid-column: 3 / 3;
     grid-row: 1 / 3;
 } 
-
 /* Contact page content */
-.contact {
-    max-width: 700px;
-    margin: 70px auto;
-  }
 #contact-form{
     margin-top: 50px;
 }
@@ -152,10 +165,42 @@ button:focus {
     width: 400px;
     height: 200px;
 }
-
 /* footer */
 footer {
     clear: both;
     text-align: center;
     margin-top: 80px;
+}
+
+/* Media Queries */
+@media all and (max-width: 900px) {
+    .project-list {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .project-list__item:last-child {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    } 
+    
+}
+@media all and (max-width: 500px) {
+    .page-header{
+        padding-left: -100px;
+    }
+    .project-list {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+    .project-list__item:last-child {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+    } 
+    .profile{
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+    }
+    .profile-description{
+        padding-top: 0;
+    }
 }
