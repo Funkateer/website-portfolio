@@ -35,6 +35,26 @@ a:hover, a:focus {
 a:active {
     color: turquoise;
 }
+.button,
+button {
+    border: none;
+    display: inline-block;
+    font-family: inherit;
+    background-color:teal;
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 3px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    transition: 0.4s opacity;
+}
+.button:hover,
+.button:focus,
+button:hover, 
+button:focus {
+    cursor: pointer;
+    opacity: 0.8;
+}
 /* NAV */
 .page-header {
     display: flex;
@@ -87,6 +107,15 @@ a:active {
 .B-Btext{   
     background-color: black;
     color: white
+}
+
+/* About page content */
+.about-container{
+    display: grid;
+}
+.about-container__item{
+    list-style-type: circle;
+    margin: 12px auto;
 }
 
 /* footer */

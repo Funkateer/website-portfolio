@@ -13,6 +13,7 @@
 </head>
 <body>
     <header class="page-header">
+        <a href="index.html"> <img src="#" alt="personal logo" alt="logo" class="page-header__item navigation__logo"></a>
         <nav class="main-navigation page-header__item">
            <ul role="menubar" class="navigation-list">
               <li><a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a></li>
@@ -21,60 +22,62 @@
            </ul>
         </nav>
     </header>
-    <hr>
-    <div>
-        <h1>About me</h1>
-    
-        <h2>My name is Aladin and Lorem ipsum dolor sit.</h2>
-        <p>
-          Born in a multicultural and always changing environment I hade the the possibility to<br> 
-          Aut quia recusandae placeat earum reiciendis eos quae, nulla ea veritatis est.<br>
-          culpa voluptate quaerat voluptatibus error.
-        </p>
-    
-        <ul id="enjoyingList">
-          <label for="enjoyingList"><strong>What I enjoy doing:</strong></label>
-          <li>Frontend development</li>
-          <li>Backend development</li>
-          <li>Test-driven development</li>
-          <li>Playing my Bass</li>
-        </ul>
-      
-        <h2>How I became a web developer</h2>
-        <p>Everything you need to know about my path.</p>
-        <p>More information</p>
-        <p>More information</p>
-    
-        <table>
-          <thead>
-            <tr>
-              <th>Skills</th>
-              <th>Years of Experience</th>
-              <th>Level of Expertise</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>HTML</td>
-              <td>2</td>
-              <td>Intermediate</td>
-            </tr>
-            <tr>
-              <td>CSS</td>
-              <td>2</td>
-              <td>Intermediate</td>
-            </tr>
-            <tr>
-              <td>JavaScript</td>
-              <td>1</td>
-              <td>Beginner</td>
-            </tr>
-          </tbody>
-        </table> <br>
-    
-        <a href="#" download>Download my CV</a><br>
-      </div>
+    <hr class="hr-break">
 
+    <div class="about-container">
+      <h1 class="about-container__item">About me</h1>
+  
+      <h2 class="about-container__item">My name is Aladin and Lorem ipsum dolor sit.</h2>
+      <p class="about-container__item">
+        Born in a multicultural and always changing environment I hade the the possibility to<br> 
+        Aut quia recusandae placeat earum reiciendis eos quae, nulla ea veritatis est.<br>
+        culpa voluptate quaerat voluptatibus error.
+      </p class="about-container__item">
+  
+      <ul class="about-container__item" id="enjoyingList">
+        <label for="enjoyingList"><strong>What I enjoy doing:</strong></label>
+        <li>Frontend development</li>
+        <li>Backend development</li>
+        <li>Test-driven development</li>
+        <li>Playing my Bass</li>
+      </ul>
+    
+      <h2 class="about-container__item">How I became a web developer</h2>
+      <p class="about-container__item">Everything you need to know about my path.</p>
+      <p class="about-container__item">More information</p>
+      <p class="about-container__item">More information</p>
+  
+  
+      <table class="about-container__item">
+        <thead>
+          <tr>
+            <th>Skills</th> 
+            <th>Years of Experience</th>
+            <th>Level of Expertise</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>2</td>
+            <td>Intermediate</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>2</td>
+            <td>Intermediate</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>1</td>
+            <td>Beginner</td>
+          </tr>
+        </tbody>
+      </table> <br>
+    
+      <a href="#" class="button about-container__item" download>Download my CV</a><br>
+    </div> <!-- about-container-->
+    
     <footer>
         <p>Find me on</p>
         <a href="https://github.com/Funkateer" target="_blank"><img src="img/githubIcon.svg" alt="Github Logo"></a>
