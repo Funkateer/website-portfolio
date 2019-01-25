@@ -13,7 +13,7 @@ text-font-body:'Noto Serif TC', serif;
     --weight-bold: 700;
 }
 
-* {
+* { 
     box-sizing: border-box;
 }
 
@@ -103,6 +103,36 @@ button:focus {
 .navigation-list__item--active {
     text-decoration: none;
 }
+.dropbtn {
+    display: none;
+    font-size: 15px;
+    padding: 7px 20px;
+}
+
+.dropdown-menu-list {
+    display: none;
+    border-radius: 3px;
+    position: absolute;
+    background-color: #f9f9f9;
+    max-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-menu:hover .dropdown-menu-list {
+    display: block;
+}
+
+.dropdown-menu-list a {
+    float: none;
+    font-size: 15px;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
 .hr-break{
     border: lightgrey 1px solid;
     margin: 0 -15px 0 -15px;
@@ -182,6 +212,31 @@ footer {
         grid-column: auto / auto;
         grid-row: auto / auto;
     } 
+}
+@media all and (max-width: 700px) {
+    .page-header {
+      padding-top: 0;
+    }
+  
+    .navigation-list__item {
+      display: none;
+    }
+  
+    .dropbtn {
+      display: block;
+    }
+  
+    .profile,
+    .contact,
+    .about,
+    .work {
+      margin-top: 25px;
+      padding: 0 10px;
+    }
+  
+    .about__table {
+      width: 100%;
+    }
 }
 @media all and (max-width: 500px) {
     .page-header{
