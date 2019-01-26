@@ -1,16 +1,24 @@
 /*
 Colors used 
-Primary Color:   
-Secondary Color:
+Primary Color:         #000080; (Dark Blue Klein)
+Primary Color lightne: #0000CD; (Blue Klein)
+Secondary Color:       #81D8D0; (Blue Tiffany)
+Tertiary Color:        #A9A9A9; (Darkgrey)
 Text Color:   
 
-text-font-body:'Noto Serif TC', serif;
+Primary text font:     'Merriweather', serif
+Secondary text font:   'Archivo Narrow', sans-serif;
 */
 :root {
-    --primary-color: #357b70;
-    --secondary-color: #489c79;    
-    --shadow: 4px 3px 19px 0px rgba(0,0,0,0.3);
+    --primary-color: #000080;
+    --primary-color-lighten: #0000CD;
+    --secondary-color: #81D8D0;
+    --tertiary-color: darkgrey;
+    --shadow: 1px 3px 5px 0px rgba(0,0,0,0.3);
     --weight-bold: 700;
+    --body-color: #f8fafa;
+    --primary-font: 'Merriweather', serif;
+    --secondary-font: 'Archivo Narrow', sans-serif;
 }
 
 * { 
@@ -18,42 +26,43 @@ text-font-body:'Noto Serif TC', serif;
 }
 
 body {
-    background: #dfdfdf;
-    font-family: 'Noto Serif TC', serif;
+    background: var(--body-color);
+    font-family: var(--primary-font);
     font-weight: 400;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.6;
     margin: 1%;
     height: 100vh;
 }
 h1 {
-    font-size: 30px;
+    font-size: 36px;
     font-weight: var(--weight-bold);
+    font-family: var(--secondary-font);
+
 }
 h2 {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: var(--weight-bold);
+    font-family: var(--secondary-font);
 }
 h3 {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: var(--weight-bold);
+    font-family: var(--secondary-font);
 }
 
 a {
-    color: var(--primary-color);
-    transition: 1s opacity;
+    color: var(--primary-color-lighten);
 }
 a:visited {
     color: var(--secondary-color);
 }
 a:hover, a:focus {
     text-decoration: none;
-    opacity: 0.8;
-    transition: 0.4s opacity;
+    opacity: 0.7;
+    transition: 0.1s opacity;
 }
-a:active {
-    color: var(--secondary-color);
-}
+
 .button,
 button {
     border: none;
@@ -65,14 +74,16 @@ button {
     padding: 8px;
     border-radius: 3px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-    transition: 0.4s opacity;
+    /* transition: 0.4s opacity; */
 }
 .button:hover,
 .button:focus,
 button:hover, 
 button:focus {
     cursor: pointer;
-    opacity: 0.8;
+    opacity: 0.89;
+    box-shadow: var(--shadow);
+
 }
 
 /* NAV */
@@ -85,10 +96,18 @@ button:focus {
     flex: 0 1 200px;
 }
 
-.main-navigation{
+/* .main-navigation{
     flex-grow: 1;
     text-align: right;
-}
+} */
+.page-header__item:last-child {
+    flex-grow: 1;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
 .navigation__logo {
     left: 20px;
     height: 50px;
@@ -107,16 +126,17 @@ button:focus {
     display: none;
     font-size: 15px;
     padding: 7px 20px;
+    margin: 0 30px
 }
 
 .dropdown-menu-list {
     display: none;
     border-radius: 3px;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: var(--body-color);
     max-width: 160px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    box-shadow: var(--shadow);
+    z-index: 1; 
 }
 
 .dropdown-menu:hover .dropdown-menu-list {
@@ -126,7 +146,7 @@ button:focus {
 .dropdown-menu-list a {
     float: none;
     font-size: 15px;
-    color: black;
+    color: var(--primary-color);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -150,13 +170,16 @@ button:focus {
     width: 350px;
     margin-right: 40px;
     border-radius: 50%;
+    box-shadow: var(--shadow);
+
 }
 .profile-description{
     padding-top: 50px;
+    
 }
 .B-Btext{
-    background-color: black;
-    color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--body-color);
 }
 
 /* About page content */
@@ -203,6 +226,8 @@ footer {
 }
 
 /* Media Queries */
+
+/* Laptop */
 @media all and (max-width: 900px) {
     .project-list {
         grid-template-columns: 1fr 1fr;
@@ -213,6 +238,7 @@ footer {
         grid-row: auto / auto;
     } 
 }
+/* Tablet */
 @media all and (max-width: 700px) {
     .page-header {
       padding-top: 0;
@@ -238,6 +264,8 @@ footer {
       width: 100%;
     }
 }
+
+/* Mobile */
 @media all and (max-width: 500px) {
     .page-header{
         padding-left: -100px;
