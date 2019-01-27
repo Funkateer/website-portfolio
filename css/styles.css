@@ -15,6 +15,7 @@ Secondary text font:   'Archivo Narrow', sans-serif;
     --secondary-color: #81D8D0;
     --tertiary-color: darkgrey;
     --shadow: 1px 3px 5px 0px rgba(0,0,0,0.3);
+    --shadow-darken :3px 5px 7px 1px rgba(0,0,0,0.3);
     --weight-bold: 700;
     --body-color: #f8fafa;
     --primary-font: 'Merriweather', serif;
@@ -106,14 +107,20 @@ button:focus {
 
 .navigation__logo {
     left: 20px;
+    height: 100px;
+}
+.navigation__logoname {
+    left: 20px;
     height: 50px;
+    margin-top: 42px
 }
 .navigation-list{
     list-style-type: none;
 }
 .navigation-list li {
     display: inline-block;
-    margin-left:4px; 
+    margin-right:10px;
+    
 }
 .navigation-list__item--active {
     text-decoration: none;
@@ -168,7 +175,7 @@ button:focus {
     width: 350px;
     margin: 60px 50px;
     border-radius: 50%;
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-darken);
 
 }
 .profile-description{
@@ -202,7 +209,7 @@ button:focus {
 .project-list__item{
     display: inline-block;
     width: 33%;
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-darken);
 }
 
 .project-list__item {
@@ -226,8 +233,15 @@ button:focus {
     width: 300px;   
     height: 200px;
     padding: 10px 4px;
+    border: solid lightgrey 0.3px
 }
+#contact-tel:hover,
+#contact-email:hover,
+#contact-mes:hover {
+    box-shadow: var(--shadow);
+    border: solid lightgrey 0.6px;
 
+}
 /* footer */
 footer {
     clear: both;
@@ -276,6 +290,12 @@ footer {
 
 /* Mobile */
 @media all and (max-width: 720px) {
+    body{
+        padding: 5px 7px;
+    }
+    .profile__portrait{
+        width: 98%;
+    }
     .navigation-list__item {
         display: none;
       }
