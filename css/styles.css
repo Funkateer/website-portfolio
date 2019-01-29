@@ -21,9 +21,10 @@ Secondary text font:   'Merriweather', serif
 	--body-color-darken: #f0f0f0;
     --primary-font: 'Caudex', serif;
     --secondary-font: 'Merriweather', serif;
-    --text-size: 11pt;
+    --text-size: 12pt;
     --h1-size: 2.6em;
-    --h2-size: 1.4em;
+	--h2-size: 1.4em;
+	--h3-size: 1.1em
 }
 * { 
     box-sizing: border-box;
@@ -43,6 +44,11 @@ h1 {
 }
 h2 {
     font-size: var(--h2-size);
+    font-weight: var(--weight-bold);
+    font-family: var(--secondary-font);
+}
+h3 {
+    font-size: var(--h3-size);
     font-weight: var(--weight-bold);
     font-family: var(--secondary-font);
 }
@@ -182,33 +188,51 @@ button:focus {
 .about-container{
     max-width: 900px;
     display: grid;
-	margin: 60px auto;
+	margin: 60px auto 20px auto;
 	padding: 0 40px;
 
 }
 .about-container__item{
     list-style-type: circle;
-    margin: 12px auto;
+    margin: 10px auto;
 }
-.title{
-margin-top: 35px;
-}
+
 .centerBtn{
-margin: 0 auto;
+margin: 50px auto 40px auto;
+}
+.front-end-skill,
+.back-end-skill{
+display: flex;
+margin: 20px auto;
+max-width: 900px;
+}
+.front-end-skill h3,
+.back-end-skill h3{
+	border-right: var(--primary-color-lighten) 1px solid ;
+	padding: 10px;
+}
+table{
+	margin: 10px;
+}
+thead th{
+	font-family: var(--secondary-font);
+	text-align: left;
+	width: 80px;
+	padding: 0 30px 0 0;
+}
+tr :last-child{
+	width:180px;
 }
 svg{
-	width: 50%;
-	margin: 0 25%;
+	width: 60%;
+	margin: 0 20%;
 	box-shadow: var(--shadow);
 }
 .SVGlegend{
-	padding-left: 30px;
-	padding-top: 5px;
-
+	padding-top: 1px;
 	color: var(--tertiary-color);
 	text-decoration: none;
-	margin: 0 30%;
-
+	margin: 0 21%;
 }
 /* WORKS page content */
  /* Fallback Grid */
@@ -303,7 +327,11 @@ footer {
     .profile-description{
         padding-top: 0;
         text-align: center;
-    }
+	}
+	svg{
+		width: 70%;
+		margin: 0 15%;
+	}
 }
 /* Mobile */
 @media all and (max-width: 720px) {
@@ -351,5 +379,5 @@ footer {
     }
     #contact-mes{
         width: 70vw;
-    }
+	}
 }
