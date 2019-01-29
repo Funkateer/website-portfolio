@@ -5,8 +5,8 @@ Primary Color lightne: #0000CD; (Blue Klein)
 Secondary Color:       #81D8D0; (Blue Tiffany)
 Tertiary Color:        #A9A9A9; (Darkgrey)
 Text Color:   
-Primary text font:     'Noto Serif TC', serif
-Secondary text font:   'Noto Serif', serif
+Primary text font:     'Caudex', serif
+Secondary text font:   'Merriweather', serif
 */
 :root {
     --primary-color: #000080;
@@ -18,9 +18,9 @@ Secondary text font:   'Noto Serif', serif
     --shadow-darken :3px 5px 7px 1px rgba(0,0,0,0.3);
     --weight-bold: 700;
 	--body-color: #f8fafa;
-	--body-color-darken: #e0e0e0;
-    --primary-font: 'Noto Serif TC', serif;
-    --secondary-font: 'Noto Serif', serif;
+	--body-color-darken: #f0f0f0;
+    --primary-font: 'Caudex', serif;
+    --secondary-font: 'Merriweather', serif;
     --text-size: 11pt;
     --h1-size: 2.6em;
     --h2-size: 1.4em;
@@ -65,7 +65,6 @@ button {
     padding: 8px;
     border-radius: 3px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-    /* transition: 0.4s opacity; */
 }
 .button:hover,
 .button:focus,
@@ -92,22 +91,23 @@ button:focus {
     height: 60px;
 }
 .namelogo{
-	font-family: var(--primary-font);
 	line-height: 13px;
 	text-align: center;
 	margin-top: 28px;
 	margin-left: 20px;	
 }
 .namelogo-name{
+	font-family: var(--primary-font);
 	font-size: 13pt;
 	font-weight: var(--weight-bold);
 }
 .namelogo-caption{
+	font-family: var(--primary-font);
 	font-size: 9pt;
 	text-align: center;
 	letter-spacing: 2px;
 	color: VAR(--primary-color);
-	text-decoration: underline
+	text-decoration: underline;
 }
 .page-header__item {
     flex: 0 1 200px;
@@ -157,11 +157,6 @@ button:focus {
     display: block;
     text-align: left;
 }
-/* .hr-break{
-    border: lightgrey 0.7px solid;
-    margin: 0 -15px 0 -15px;
-    width: 100%;
-} */
 /* INDEX page content */
 .profile {
     max-width: 900px;
@@ -202,14 +197,18 @@ margin-top: 35px;
 margin: 0 auto;
 }
 svg{
-	width: 90%;
-	margin: 0 5%;
-	box-shadow: var(--shadow)
-  }
-  .SVGlegend{
-	padding-left: 6%;
+	width: 50%;
+	margin: 0 25%;
+	box-shadow: var(--shadow);
+}
+.SVGlegend{
+	padding-left: 30px;
+	padding-top: 5px;
+
 	color: var(--tertiary-color);
 	text-decoration: none;
+	margin: 0 30%;
+
 }
 /* WORKS page content */
  /* Fallback Grid */
@@ -259,7 +258,6 @@ svg{
     box-shadow: var(--shadow);
     border: solid var(--tertiary-color-lighten) 0.6px;
 }
-
 /* footer */
 footer {
     clear: both;
@@ -329,14 +327,14 @@ footer {
     }
     .navigation-list__item {
 		display: none;
-	  }
-	  ul {
+	}
+	ul {
 		padding-inline-start: 0;
 		width: 0;
-      }
-      .dropbtn {
+	}
+	.dropbtn {
         display: block;
-      }
+	}
     .page-header{
         padding-left: -100px;
     }
