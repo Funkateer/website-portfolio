@@ -60,9 +60,7 @@ a:hover, a:focus {
     opacity: 0.7;
     transition: 0.1s opacity;
 }
-a:visited{
-    color: var(--Secondary-color);
-}
+
 .button,
 button {
     border: none;
