@@ -191,7 +191,7 @@ a .namelogo-name {
     float: left;
     width: 370px;
     margin: 60px 50px;
-    border-radius: 20%;
+    border-radius: 35px;
     box-shadow: var(--shadow-darken);
 }
 
@@ -261,6 +261,7 @@ svg{
     width: 60%;
     margin: 0 20%;
     box-shadow: var(--shadow);
+    border-radius: 30px;
 }
 
 .SVGlegend{
