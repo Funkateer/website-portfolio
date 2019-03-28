@@ -59,7 +59,7 @@
         }
 
         if (message) {
-            var error = document.createElement('div');
+            error = document.createElement('div');
             error.classList.add('error-message');
             error.innerText = message;
             $container.appendChild(error);
