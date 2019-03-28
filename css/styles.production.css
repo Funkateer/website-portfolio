@@ -395,10 +395,6 @@ footer {
         grid-row: auto / auto;
     }
 
-    .page-header {
-        padding-top: 0;
-    }
-
     .profile,
     .contact,
     .about,
@@ -434,7 +430,7 @@ footer {
 /* Mobile */
 @media all and (max-width: 720px) {
     body{
-        font-size: 8pt;
+        font-size: 10pt;
     }
 
     .namelogo{
@@ -478,6 +474,19 @@ footer {
         margin: 0 auto;
     }
 
+    .about-container{
+        padding: 0;
+        margin: 0 ;
+    }
+
+    .about-container__item{
+        width: 90vw;
+    }
+
+    .centerBtn{
+        width: 40vw
+    }
+
     .project-list {
         grid-template-columns: 1fr;
         grid-gap: 20px;
@@ -486,6 +495,10 @@ footer {
     .project-list__item:last-child {
         grid-column: auto / auto;
         grid-row: auto / auto;
+    }
+
+    .work-container{
+        margin: 0 20px;
     }
 
     .contact-container{
