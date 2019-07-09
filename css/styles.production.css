@@ -2,8 +2,8 @@
 Colors used
 Primary Color:         #000080; (Dark Blue Klein)
 Primary Color lighten: #0000CD; (Blue Klein)
-Secondary Color:       #81D8D0; (Blue Tiffany)
-Tertiary Color:        #A9A9A9; (Darkgrey)
+Secondary Color:       #0000FF; (Light Blue)
+Tertiary Color:        #9c9c9c; (Darkgrey)
 Text Color:
 Primary text font:     'Caudex', serif
 Secondary text font:   'Merriweather', serif
@@ -39,30 +39,34 @@ a {
 
 a:hover, a:focus {
   text-decoration: none;
-  opacity: 0.7;
+  opacity: 0.8;
   transition: 0.1s opacity;
 }
 
 .button {
+  line-height: 1;
+  margin: 0 3px;
   border: none;
   display: inline-block;
   font-family: inherit;
   background-color: #000080;
   color: #f8fafa;
   text-decoration: none;
-  padding: 8px;
+  padding: 6px;
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
 button {
+  line-height: 1;
+  margin: 0 3px;
   border: none;
   display: inline-block;
   font-family: inherit;
   background-color: #000080;
   color: #f8fafa;
   text-decoration: none;
-  padding: 8px;
+  padding: 6px;
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
@@ -70,30 +74,30 @@ button {
 .button:hover {
   cursor: pointer;
   opacity: 0.89;
-  box-shadow: 1px 3px 5px 2px rgba(0,0,0,0.3);
+  box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.3);
 }
 
 .button:focus {
   cursor: pointer;
   opacity: 0.89;
-  box-shadow: 1px 3px 5px 2px rgba(0,0,0,0.3);
+  box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.3);
 }
 
 button:hover {
   cursor: pointer;
   opacity: 0.89;
-  box-shadow: 1px 3px 5px 2px rgba(0,0,0,0.3);
+  box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.3);
 }
 
 button:focus {
   cursor: pointer;
   opacity: 0.89;
-  box-shadow: 1px 3px 5px 2px rgba(0,0,0,0.3);
+  box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.3);
 }
 
 .legend{
   font-size: 7pt;
-  color: rgb(156, 156, 156);
+  color: #9c9c9c;
 }
 
 /* NAV */
@@ -172,7 +176,7 @@ a .namelogo-name {
   position: absolute;
   background-color: #f8fafa;
   max-width: 160px;
-  box-shadow: 1px 3px 5px 2px rgba(0,0,0,0.3);
+  box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.3);
 }
 
 .dropdown-menu:hover .dropdown-menu-list {
@@ -198,10 +202,10 @@ a .namelogo-name {
 
 .profile__portrait {
   float: left;
-  width: 400px;
+  width: 370px;
   margin: 60px 50px;
   border-radius: 35px;
-  box-shadow: 3px 5px 7px 1px rgba(0,0,0,0.3);
+  box-shadow: 3px 5px 7px 0px rgba(0,0,0,0.3);
 }
 
 .profile-description{
@@ -272,13 +276,13 @@ tr :last-child{
 svg{
   width: 60%;
   margin: 0 20%;
-  box-shadow: 1px 3px 5px 2px rgba(0,0,0,0.3);
+  box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.3);
   border-radius: 30px;
 }
 
 .SVGlegend{
   padding-top: 1px;
-  color: rgb(156, 156, 156);
+  color: #9c9c9c;
   text-decoration: none;
   margin: 0 21%;
 }
@@ -302,10 +306,15 @@ svg{
   grid-gap: 20px;
 }
 
+.project-list__img{
+  max-width: 100%;
+  margin: auto;
+}
+
 .project-list__item {
   display: inline-block;
   width: 33%;
-  box-shadow: 3px 5px 7px 1px rgba(0,0,0,0.3);
+  box-shadow: 3px 5px 7px 0px rgba(0,0,0,0.3);
   background-color: #DFDFDF;
   padding: 10px 20px;
   border-radius: 3%;
@@ -314,7 +323,7 @@ svg{
 
 .project-list__item:last-child {
   grid-column: 3 / 3;
-  grid-row: 1 / 3;
+  grid-row: 3 / 4;
   font-size: 1.1em;
 }
 
@@ -326,6 +335,11 @@ svg{
 .contact-container{
   max-width: 900px;
   margin: 40px 12%;
+}
+
+input{
+  line-height: 1.4;
+  padding: 3px;
 }
 
 #contact-form{
@@ -348,25 +362,19 @@ svg{
 #contact-tel:focus {
   border: solid #0000CD 1.4px;
   outline: none !important;
-  box-shadow: 1px 3px 5px 2px rgba(0,0,0,0.3);
+  box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.3);
 }
 
 #contact-email:focus {
   border: solid #0000CD 1.4px;
   outline: none !important;
-  box-shadow: 1px 3px 5px 2px rgba(0,0,0,0.3);
+  box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.3);
 }
 
 #contact-mes:focus {
   border: solid #0000CD 1.4px;
   outline: none !important;
-  box-shadow: 1px 3px 5px 2px rgba(0,0,0,0.3);
-}
-
-
-.error-message {
-  font-size: 12px;
-  color: red;
+  box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.3);
 }
 
 /* footer */
