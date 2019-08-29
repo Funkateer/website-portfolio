@@ -1,14 +1,6 @@
-/*
-Colors used
-Primary Color:         #000080; (Dark Blue Klein)
-Primary Color lighten: #0000CD; (Blue Klein)
-Secondary Color:       #0000FF; (Light Blue)
-Tertiary Color:        #9c9c9c; (Darkgrey)
-Text Color:
-Primary text font:     'Caudex', serif
-Secondary text font:   'Merriweather', serif
-*/
 :root {
+  --body-color: #f8fafa;
+  --body-color-darken: #f5f5f5;
   --primary-color: #000080;
   --primary-color-lighten: #0000CD;
   --secondary-color: #0000FF;
@@ -16,14 +8,13 @@ Secondary text font:   'Merriweather', serif
   --tertiary-color-lighten: #dfdfdf;
   --shadow: 1px 3px 5px 0px rgba(0,0,0,0.3);
   --shadow-darken : 3px 5px 7px 0px rgba(0,0,0,0.3);
-  --weight-bold: 700;
-  --body-color: #f8fafa;
-  --body-color-darken: #f5f5f5;
-  --primary-font: 'Caudex', serif;
-  --secondary-font: 'Merriweather', serif;
+
   --text-size: 13pt;
   --h1-size: 2.6em;
   --h2-size: 1.4em;
+  --weight-bold: 700;
+  --primary-font: 'Caudex', serif;
+  --secondary-font: 'Merriweather', serif;
 }
 
 * {
