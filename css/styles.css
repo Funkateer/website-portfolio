@@ -13,13 +13,16 @@
 
   /* Text and Fonts */
   --text-size: 13pt;
+  --secondary-text-size: 9pt;
   --h1-size: 2.6em;
   --h2-size: 1.4em;
   --weight-bold: 700;
   --primary-font: 'Caudex', serif;
   --secondary-font: 'Merriweather', serif;
+  --alt-font: Arial, Helvetica, sans-serif;
 
   /* Mobile sizes */
+
 }
 
 * {
@@ -58,17 +61,26 @@ a:hover, a:focus {
 
 .button,
 button {
-  line-height: 1;
+  border-radius: 3px;
   margin: 0 3px;
+  padding: 0 6px;
   border: none;
   display: inline-block;
-  font-family: inherit;
   background-color: var(--primary-color);
   color: var(--body-color);
   text-decoration: none;
-  padding: 6px;
-  border-radius: 3px;
+  text-align: center;
+  font-family: var(--alt-font);
+  font-weight: 100;
+  font-size: 10pt;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.button:active,
+button:active{
+  border-bottom: none;
+  position: relative;
+  top: 2px;
 }
 
 .button:hover,
@@ -78,6 +90,21 @@ button:focus {
   cursor: pointer;
   opacity: 0.89;
   box-shadow: var(--shadow);
+}
+
+.img[alt]{
+  display: inline-block;
+  color: var(--tertiary-color);
+  font-weight: 100;
+  font-size: var(--secondary-text-size);
+  font-family: var(--alt-font);
+}
+
+.about-container__header ,
+.work-container__header,
+.contact-container__header{
+  text-align: center;
+  margin: 80px 0
 }
 
 .legend{
@@ -195,9 +222,10 @@ a .namelogo-name {
 
 .profile-description{
   padding-top: 60px;
+  text-align: center
 }
 
-.B-Btext{
+.blueBackground-text{
   background-color: var(--primary-color);
   color: var(--body-color);
   border-radius: 10%;
@@ -208,7 +236,7 @@ a .namelogo-name {
 .about-container{
   max-width: 900px;
   display: grid;
-  margin: 60px auto 20px auto;
+  margin: 0 auto;
   padding: 0 40px;
 }
 
@@ -340,7 +368,7 @@ svg{
   display: inline-block;
   width: 33%;
   box-shadow: var(--shadow-darken);
-  padding: 10px 20px;
+  padding: 20px 20px;
   border-radius: 3%;
   width: auto;
   text-align: center;
@@ -358,7 +386,7 @@ svg{
 }
 
 .project-list__item:last-child {
-  grid-column: 1 / 3;
+  grid-column: 2 / 4;
   grid-row: 4 / 4;
   font-size: 1.1em;
 }
