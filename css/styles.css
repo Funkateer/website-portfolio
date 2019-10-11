@@ -1,6 +1,8 @@
 :root {
 
-  /* Colors used */
+  /* ///////////// */
+  /*  Colors used  */
+  /* ///////////// */
   --body-color: #f8fafa;
   --body-color-darken: #f5f5f5;
   --primary-color: #000080;
@@ -11,7 +13,9 @@
   --shadow: 1px 3px 5px 0px rgba(0,0,0,0.3);
   --shadow-darken : 3px 5px 7px 0px rgba(0,0,0,0.3);
 
-  /* Text and Fonts */
+  /* //////////////// */
+  /*  Text and Fonts  */
+  /* //////////////// */
   --text-size: 13pt;
   --secondary-text-size: 9pt;
   --h1-size: 2.6em;
@@ -21,9 +25,12 @@
   --secondary-font: 'Merriweather', serif;
   --alt-font: Arial, Helvetica, sans-serif;
 
-  /* Mobile sizes */
+  /* ////////////// */
+  /*  Mobile sizes  */
+  /* ////////////// */
 
 }
+
 
 * {
   box-sizing: border-box;
@@ -62,8 +69,7 @@ a:hover, a:focus {
 .button,
 button {
   border-radius: 3px;
-  margin: 0 3px;
-  padding: 0 6px;
+  padding: 8px 16px;
   border: none;
   display: inline-block;
   background-color: var(--primary-color);
@@ -72,8 +78,9 @@ button {
   text-align: center;
   font-family: var(--alt-font);
   font-weight: 100;
-  font-size: 10pt;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  line-height: 1;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .button:active,
@@ -112,11 +119,14 @@ button:focus {
   color: var(--tertiary-color);
 }
 
-/* NAV */
+
+/* //////// */
+/*  NAVBAR  */
+/* //////// */
 .page-header {
   display: flex;
   width: 100%;
-  padding: 5px 5px 0 5px ;
+  padding: 15px 30px 15px 30px ;
   background-color: var(--body-color-darken);
 }
 
@@ -161,13 +171,12 @@ a .namelogo-name {
   flex-grow: 1;
   text-align: right;
   display: flex;
-  align-items: center;
   justify-content: flex-end;
 }
 
 .navigation-list li {
   display: inline-block;
-  margin: 0 15px 0 15px;
+  margin: 0 15px;
 }
 
 .navigation-list__item--active {
@@ -205,7 +214,10 @@ a .namelogo-name {
   text-align: left;
 }
 
-/* INDEX page content */
+
+/* //////////////////// */
+/*  INDEX page content  */
+/* //////////////////// */
 .profile-container {
   max-width: 900px;
   margin: 6% auto;
@@ -232,7 +244,10 @@ a .namelogo-name {
 
 }
 
-/* ABOUT page content */
+
+/* //////////////////// */
+/*  ABOUT page content  */
+/* //////////////////// */
 .about-container{
   max-width: 900px;
   display: grid;
@@ -248,10 +263,6 @@ a .namelogo-name {
 .strong{
   font-family: var(--secondary-font);
   font-weight: var(--weight-bold);
-}
-
-.centerBtn{
-  margin: 50px auto 40px auto;
 }
 
 .front-end-skill,
@@ -345,7 +356,11 @@ svg{
   margin: 0 21%;
 }
 
-/* WORKS page content */
+
+/* /////////////////// */
+/*  WORK page content  */
+/* /////////////////// */
+
 /* Fallback Grid */
 .project-list__item {
   max-width: 900px;
@@ -395,7 +410,10 @@ svg{
   margin: 0 auto;
 }
 
-/* CONTACT page content */
+
+/* ////////////////////// */
+/*  CONTACT page content  */
+/* ////////////////////// */
 .contact-container{
   max-width: 900px;
   margin: 40px auto;
@@ -432,7 +450,10 @@ input{
   box-shadow: var(--shadow);
 }
 
-/* footer */
+
+/* //////// */
+/*  footer  */
+/* //////// */
 footer {
   clear: both;
   text-align: center;
@@ -441,8 +462,12 @@ footer {
   padding-bottom: 20px;
 }
 
-/* Media Queries */
-/* Tablet */
+
+/* /////////////// */
+/*  Media Queries  */
+/* /////////////// */
+
+/* TABLET */
 @media all and (max-width: 1020px) {
   body{
     font-size: 10pt;
@@ -490,15 +515,21 @@ footer {
   }
 }
 
-/* Mobile */
+
+/* MOBILE */
 @media all and (max-width: 720px) {
   body{
     font-size: 10pt;
   }
 
+  .page-header{
+    padding: 15px;
+    height: 90px;
+    width: 100vw
+  }
+
   .namelogo{
     line-height: 8px;
-    margin: auto auto;
     width: 66vw
   }
 
@@ -526,6 +557,7 @@ footer {
 
   .dropbtn {
     display: block;
+    margin: 0
   }
 
   .page-header{
