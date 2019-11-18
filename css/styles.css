@@ -115,7 +115,7 @@ button:focus {
 }
 
 .legend{
-  font-size: 9px;
+  font-size: 10px;
   color: var(--tertiary-color);
 }
 
@@ -444,7 +444,7 @@ input{
 
 #contact-email,
 #contact-tel{
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 #contact-mes{
@@ -453,7 +453,27 @@ input{
   padding: 10px 4px;
   min-height: 60px;
   border: var(--tertiary-color)  solid .7px;
+}
 
+.messageSent{
+  text-align: center;
+  padding: 10px;
+  background: #79c879;
+  color: #fff;
+  margin-bottom: 10px;
+  display: none;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.error-message{
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #contact-tel:focus,
