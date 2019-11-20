@@ -373,14 +373,6 @@ svg{
 /* /////////////////// */
 /*  WORK page content  */
 /* /////////////////// */
-/* Fallback Grid */
-.project-list__item {
-  max-width: 900px;
-  padding: 0 40px;
-  display: inline-block;
-  width: 33%;
-}
-
 .work-container{
   margin: 0 40px;
 }
@@ -389,6 +381,14 @@ svg{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
+}
+
+/* Fallback Grid */
+.project-list__item {
+  max-width: 900px;
+  padding: 0 40px;
+  display: inline-block;
+  width: 33%;
 }
 
 .project-list__item {
@@ -405,7 +405,7 @@ svg{
 .project-list__img{
   max-width: 100%;
   margin: auto;
-  height: 300px;
+  height: auto;
 }
 
 .project-list p {
