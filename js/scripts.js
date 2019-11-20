@@ -15,7 +15,7 @@
     }
 
     if (value.indexOf('@') === -1 || value.indexOf('.') === -1) {
-      showErrorMessage($emailInput, 'Enter a valid e-mail: example@here.com');
+      showErrorMessage($emailInput, 'Enter a valid e-mail: myEmail@example.com');
       return false;
     }
 
@@ -40,8 +40,13 @@
   function validateMessage() {
     var value = $messageInput.value;
 
-    if (!value) {
+    if (!value ) {
       showErrorMessage($messageInput, 'Message required');
+      return false;
+    }
+
+    if (value.indexOf('<') !== -1 || value.indexOf('>') !== -1 || value.indexOf('`') !== -1 || value.indexOf('&') !== -1) {
+      showErrorMessage($messageInput, 'Invalid characters: < > ` or &');
       return false;
     }
 
@@ -73,10 +78,37 @@
     return isValidEmail && isValidPhone && isValidMessage;
   }
 
+
+
+  // NEW
+  //submit message
+  function submitForm(){
+    // get value of all input fields
+    var email = $emailInput.value
+    var phone = $phoneInput.value
+    var message = $messageInput.value
+
+    console.log(email, phone, message)
+
+    //show alert
+    document.querySelector('.messageSent').style.display = 'block';
+
+    // hide alert after 3 seconds
+    setTimeout(() => {
+      document.querySelector('.messageSent').style.display = 'none';
+    }, 3000);
+
+    // clear form
+    $form.reset();
+  }
+  // END
+
+
+
   $form.addEventListener('submit', (e) => {
     e.preventDefault(); // Do not submit to the server
     if (validateForm()) {
-      alert('Success!');
+      // submitForm()
     }
   });
 
