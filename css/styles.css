@@ -216,6 +216,10 @@ a .namelogo-name {
   text-align: left;
 }
 
+.hideFromMobile{
+  display: none;
+}
+
 /* //////////////////// */
 /*  INDEX page content  */
 /* //////////////////// */
@@ -564,10 +568,6 @@ footer {
   .tech-icon__item:active img {
     opacity: 1;
     transform: none;
-  }
-
-  .hideForMobile{
-    display: none;
   }
 
   svg{
