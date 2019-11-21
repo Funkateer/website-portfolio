@@ -550,9 +550,15 @@ footer {
     margin: 40px auto;
   }
 
-  .tooltip-text
-  {
-    font-size: 10px;
+  .tech-icon__item:hover
+  .tooltip-text {
+    display: none;
+  }
+
+  .tech-icon__item:hover img,
+  .tech-icon__item:active img {
+    opacity: 1;
+    transform: none;
   }
 
   .hideForMobile{
