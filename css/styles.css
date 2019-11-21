@@ -125,7 +125,7 @@ button:focus {
 .page-header {
   display: flex;
   width: 100%;
-  padding: 15px 30px 15px 30px ;
+  padding: 15px 30px;
   background-color: var(--body-color-darken);
 }
 
@@ -185,9 +185,9 @@ a .namelogo-name {
 
 .dropbtn {
   display: none;
-  font-size: 12px;
+  font-size: 14px;
   padding: 7px 20px;
-  margin: 2px 15px;
+  margin: 27px 0 2px 15px;
 }
 
 .dropdown-menu-list {
@@ -198,6 +198,7 @@ a .namelogo-name {
   background-color: var(--body-color);
   max-width: 160px;
   box-shadow: var(--shadow);
+  padding: 6px 12px;
 }
 
 .dropdown-menu:hover
@@ -207,7 +208,7 @@ a .namelogo-name {
 
 .dropdown-menu-list a {
   float: none;
-  font-size: 15px;
+  font-size: 16px;
   color: var(--primary-color-lighten);
   padding: 10px 20px;
   text-decoration: none;
@@ -343,7 +344,7 @@ tr :last-child{
 }
 
 .cvAction{
-  margin: 3% 0 0 20%;
+  margin: 3% 0 0 10%;
 }
 
 .cvDownload{
@@ -351,8 +352,9 @@ tr :last-child{
 }
 
 .cvView{
-  margin: 0 20%;
-  background-color: white;
+  margin: 0 10%;
+  width: 80%;
+  height: 2100px;
 }
 
 svg{
@@ -548,9 +550,19 @@ footer {
     margin: 40px auto;
   }
 
-  .tooltip-text
-  {
-    font-size: 12px;
+  .tech-icon__item:hover
+  .tooltip-text {
+    display: none;
+  }
+
+  .tech-icon__item:hover img,
+  .tech-icon__item:active img {
+    opacity: 1;
+    transform: none;
+  }
+
+  .hideForMobile{
+    display: none;
   }
 
   svg{
@@ -579,7 +591,7 @@ footer {
   }
 
  .page-header{
-    padding: 15px;
+    padding: 10px 15px;
     height: 90px;
     width: 100vw
   }
