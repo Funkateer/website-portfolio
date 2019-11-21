@@ -216,10 +216,6 @@ a .namelogo-name {
   text-align: left;
 }
 
-.hideFromMobile{
-  display: none;
-}
-
 /* //////////////////// */
 /*  INDEX page content  */
 /* //////////////////// */
@@ -524,6 +520,10 @@ footer {
 @media all and (max-width: 1020px) {
   body{
     font-size: 10pt;
+  }
+
+  .hideFromMobile{
+    display: none;
   }
 
   .profile,
