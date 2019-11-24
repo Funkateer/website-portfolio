@@ -53,25 +53,32 @@
 			Skype <a href="skype:alaabugrara?userinfo"> alaabugrara</a> <br>
 			Mail <a href="mailto:alaeddin.abugrara@gmail.com">alaeddin.abugrara(at)gmail.com</a> <br>
 		</section>
-		<form action="#" method="POST" id="contact-form" class="contact-item">
+		<form
+		action="https://www.enformed.io/bbi7dw5v"
+		method="POST" id="gform" class="contact-item"
+		>
 			<h2>Get in touch:</h2>
 		   <div>
 				<label class="standard-label" for="contact-email">Email: <span class="legend">(required)</span></label> <br>
-				<input id="contact-email" type="email" required>
+				<input name="input" id="contact-email" type="email" required>
 		   </div>
 			<br>
 			<div>
 				<label class="standard-label" for="contact-tel">Telephone: </label> <br>
-				<input id="contact-tel" type="tel">
+				<input name="Telephone" id="contact-tel" type="tel">
 			</div>
 			<br>
 			<div class="messageSent">Your message has been sent</div>
-		   <div>
+			<div>
 				<label class="standard-label last" for="contact-mes" >Message: <span class="legend">(required)</span> </label><br>
-				<textarea id="contact-mes" required maxlength="240" placeholder="240 characters left &#10;messaging is under construction &#x1F3D7;"></textarea>
-		   </div>
+				<textarea name="textarea" id="contact-mes" required maxlength="240" placeholder="240 characters left"></textarea>
+			</div>
 			<br>
 			<input type="submit" value="Send message" class="button">
+
+			<input type="hidden" name="*redirect" value="http://www.alabugrara.com/contact" />
+			<input type="hidden" name="*honeypot" />
+
 		</form>
 	</div>
 	<footer>
@@ -82,5 +89,7 @@
 	</footer>
 	<!-- <script src="dist/js/scripts.min.js"></script> -->
 	<script src="js/scripts.js"></script>
+	<!-- <script src="js/HTTPresponse.js"></script> -->
+
 </body>
 </html>

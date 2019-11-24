@@ -1,6 +1,6 @@
 (function() {
   // VARIABLES
-  var $form = document.querySelector('#contact-form');
+  var $form = document.querySelector('#gform');
   var $emailInput = document.querySelector('#contact-email');
   var $phoneInput = document.querySelector('#contact-tel');
   var $messageInput = document.querySelector('#contact-mes');
@@ -78,37 +78,20 @@
     return isValidEmail && isValidPhone && isValidMessage;
   }
 
-
-
-  // NEW
-  //submit message
-  function submitForm(){
-    // get value of all input fields
-    var email = $emailInput.value
-    var phone = $phoneInput.value
-    var message = $messageInput.value
-
-    console.log(email, phone, message)
-
-    //show alert
-    document.querySelector('.messageSent').style.display = 'block';
-
-    // hide alert after 3 seconds
-    setTimeout(() => {
-      document.querySelector('.messageSent').style.display = 'none';
-    }, 3000);
-
-    // clear form
-    $form.reset();
-  }
-  // END
-
-
-
   $form.addEventListener('submit', (e) => {
     e.preventDefault(); // Do not submit to the server
     if (validateForm()) {
-      // submitForm()
+      document.getElementById("gform").submit();
+      //show alert
+      document.querySelector('.messageSent').style.display = 'block';
+
+      // hide alert after 3 seconds
+      setTimeout(() => {
+        document.querySelector('.messageSent').style.display = 'none';
+      }, 3000);
+
+      // clear form
+      $form.reset();
     }
   });
 
