@@ -296,7 +296,6 @@ tr :last-child{
 .tech-icon{
   width: 100%;
   margin: 60px auto;
-  padding: 0 15px;
   border-radius: 30px;
 }
 
@@ -510,7 +509,7 @@ footer {
 
 .social-img{
   height: 55px;
-  margin: 0 3px;
+  margin: 3px;
 }
 
 /* /////////////// */
@@ -673,6 +672,7 @@ footer {
   }
 
   .social-img{
-    height: 35px;
+    height: 40px;
+    margin-bottom: 10px;
   }
 }
