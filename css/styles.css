@@ -155,6 +155,7 @@ input{
   margin-top: 28px;
   margin-left: 10px;
   text-decoration: none;
+  float: right;
 }
 
 .namelogo-name{
@@ -505,7 +506,7 @@ footer {
   clear: both;
   text-align: center;
   width: 100%;
-  padding-top: 180px;
+  padding-top: 100px;
   padding-bottom: 20px;
 }
 
@@ -561,8 +562,8 @@ footer {
   }
 
   .tech-icon__img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     margin: 4px;
   }
 
@@ -640,8 +641,8 @@ footer {
   }
 
   .tech-icon__img {
-    width: 46px;
-    height: 46px;
+    width: 50px;
+    height: 50px;
     margin: 4px;
   }
 
