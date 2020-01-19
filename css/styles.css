@@ -149,32 +149,30 @@ input{
   height: 60px;
 }
 
-.namelogo{
+.my-logo {
   line-height: 13px;
   text-align: center;
-  margin-top: 28px;
-  margin-left: 10px;
-  text-decoration: none;
-  float: right;
 }
 
-.namelogo-name{
+.logo-name {
   font-family: var(--primary-font);
   font-size: 12pt;
   font-weight: var(--weight-bold);
-}
-
-a .namelogo-name {
   color: black;
+  position: absolute;
+  top: 50px;
+  left: 105px;
 }
 
-.namelogo-caption{
+.logo-caption{
   font-family: var(--primary-font);
   font-size: 9pt;
-  text-align: center;
   letter-spacing: 2px;
   color: VAR(--primary-color);
   text-decoration: underline;
+  position: absolute;
+  top: 70px;
+  left: 133px;
 }
 
 .page-header__item {
@@ -398,7 +396,9 @@ svg{
 .project-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 40px 30px;
+  font-size: 0.9rem;
+  margin: 0 5%;
 }
 
 /* Fallback Grid */
@@ -419,6 +419,7 @@ svg{
   text-align: center;
   background-color: var(--body-color-darken);
 }
+
 
 .project-list__img{
   max-width: 100%;
@@ -587,6 +588,7 @@ footer {
   .project-list {
     grid-template-columns: 1fr 1fr;
     grid-gap: 15px;
+    margin: 0 10%;
   }
 
   .project-list__item:last-child {
@@ -609,17 +611,16 @@ footer {
     width: 100vw
   }
 
-  .namelogo{
+  .my-logo{
     line-height: 8px;
-    width: 66vw
   }
 
-  .namelogo-name{
+  .logo-name{
     font-size: 9pt;
     line-height: 15px;
   }
 
-  .namelogo-caption {
+  .logo-caption {
     font-size: 5pt;
   }
 
