@@ -155,6 +155,7 @@ input{
   margin-top: 28px;
   margin-left: 10px;
   text-decoration: none;
+  float: right;
 }
 
 .namelogo-name{
@@ -505,7 +506,7 @@ footer {
   clear: both;
   text-align: center;
   width: 100%;
-  padding-top: 180px;
+  padding-top: 100px;
   padding-bottom: 20px;
 }
 
