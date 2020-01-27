@@ -51,6 +51,7 @@ h2 {
 
 a {
   color: var(--primary-color-lighten);
+  cursor: pointer;
 }
 
 p {
@@ -58,7 +59,7 @@ p {
   margin: 0 auto;
 }
 
-a:hover, a:focus {
+a:hover, a:focus{
   text-decoration: none;
   opacity: 0.8;
   transition: 0.1s opacity;
@@ -306,7 +307,7 @@ input{
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
 }
 
@@ -338,17 +339,16 @@ input{
 }
 
 svg{
-  width: 60%;
-  margin: 0 20%;
   box-shadow: var(--shadow);
   border-radius: 30px;
 }
 
 .SVGlegend{
+  margin: 2px 3%;
   padding-top: 1px;
   color: var(--grey);
   text-decoration: none;
-  margin: 0 21%;
+  text-align: left;
   font-size: 9px;
 }
 
@@ -551,6 +551,11 @@ footer {
     font-size: 6;
   }
 
+  .SVGlegend{
+    margin: 2px auto;
+    font-size: 7px;
+  }
+
   .project-list {
     grid-template-columns: 1fr 1fr;
     grid-gap: 15px;
@@ -614,9 +619,9 @@ footer {
   }
 
   .SVGlegend{
-    font-size: 7px;
+    font-size: 6px;
   }
-
+  
   .work-container{
     margin: 0 20px;
   }
