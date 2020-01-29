@@ -16,11 +16,10 @@
   --text-size: 12pt;
   --secondary-text-size: 9pt;
   --h1-size: 2.2em;
-  --h2-size: 1.1em;
+  --h2-size: 1.4em;
   --weight-bold: 700;
   --primary-font: 'Nunito', sans-serif;
   --secondary-font: 'Lato', sans-serif;
-
   --alt-font: Arial, Helvetica, sans-serif;
 }
 
@@ -106,16 +105,17 @@ input{
 }
 
 ::-webkit-input-placeholder { /* Edge */
-  font-size: 10px;
+  font-size: var(--secondary-text-size);
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-  font-size: 10px;
+  font-size: var(--secondary-text-size);
 }
 
 ::placeholder {
-  font-size: 10px;
+  font-size: var(--secondary-text-size);
 }
+
 .img[alt]{
   display: inline-block;
   color: var(--grey);
@@ -132,7 +132,7 @@ input{
 }
 
 .legend{
-  font-size: 10px;
+  font-size: var(--secondary-text-size);
   color: var(--grey);
 }
 
@@ -157,7 +157,7 @@ input{
 
 .logo-name {
   font-family: var(--primary-font);
-  font-size: 12pt;
+  font-size: var(--text-size);
   font-weight: var(--weight-bold);
   color: black;
   position: absolute;
@@ -167,7 +167,7 @@ input{
 
 .logo-caption{
   font-family: var(--primary-font);
-  font-size: 9pt;
+  font-size: var(--secondary-text-size);
   letter-spacing: 2px;
   color: VAR(--primary-color);
   text-decoration: underline;
@@ -307,7 +307,7 @@ input{
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-  font-size: 14px;
+  font-size: var(--text-size);
   font-weight: 700;
 }
 
@@ -351,7 +351,7 @@ svg{
   color: var(--grey);
   text-decoration: none;
   text-align: left;
-  font-size: 9px;
+  font-size: var(--secondary-text-size);
 }
 
 /* /////////////////// */
@@ -451,7 +451,7 @@ svg{
 
 .error-message{
   color: red;
-  font-size: 12px;
+  font-size: var(--text-size);
   position: absolute;
   left: 0;
   right: 0;
@@ -490,7 +490,7 @@ footer {
 /* TABLET */
 @media all and (max-width: 1020px) {
   body{
-    font-size: 10pt;
+    font-size: var(--secondary-text-size);
   }
 
   .hideFromMobile{
@@ -579,7 +579,7 @@ footer {
   }
 
   .logo-name{
-    font-size: 9pt;
+    font-size: var(--secondary-text-size);
     line-height: 15px;
   }
 
