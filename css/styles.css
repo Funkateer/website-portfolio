@@ -16,11 +16,10 @@
   --text-size: 12pt;
   --secondary-text-size: 9pt;
   --h1-size: 2.2em;
-  --h2-size: 1.1em;
+  --h2-size: 1.4em;
   --weight-bold: 700;
   --primary-font: 'Nunito', sans-serif;
   --secondary-font: 'Lato', sans-serif;
-
   --alt-font: Arial, Helvetica, sans-serif;
 }
 
@@ -51,6 +50,7 @@ h2 {
 
 a {
   color: var(--primary-color-lighten);
+  cursor: pointer;
 }
 
 p {
@@ -58,7 +58,7 @@ p {
   margin: 0 auto;
 }
 
-a:hover, a:focus {
+a:hover, a:focus{
   text-decoration: none;
   opacity: 0.8;
   transition: 0.1s opacity;
@@ -105,16 +105,17 @@ input{
 }
 
 ::-webkit-input-placeholder { /* Edge */
-  font-size: 10px;
+  font-size: var(--secondary-text-size);
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-  font-size: 10px;
+  font-size: var(--secondary-text-size);
 }
 
 ::placeholder {
-  font-size: 10px;
+  font-size: var(--secondary-text-size);
 }
+
 .img[alt]{
   display: inline-block;
   color: var(--grey);
@@ -131,7 +132,7 @@ input{
 }
 
 .legend{
-  font-size: 10px;
+  font-size: var(--secondary-text-size);
   color: var(--grey);
 }
 
@@ -156,7 +157,7 @@ input{
 
 .logo-name {
   font-family: var(--primary-font);
-  font-size: 12pt;
+  font-size: var(--text-size);
   font-weight: var(--weight-bold);
   color: black;
   position: absolute;
@@ -166,7 +167,7 @@ input{
 
 .logo-caption{
   font-family: var(--primary-font);
-  font-size: 9pt;
+  font-size: var(--secondary-text-size);
   letter-spacing: 2px;
   color: VAR(--primary-color);
   text-decoration: underline;
@@ -275,49 +276,15 @@ input{
   margin: 5px auto;
 }
 
-.strong{
-  font-family: var(--secondary-font);
-  font-weight: var(--weight-bold);
-}
-
-.front-end-skill,
-.back-end-skill{
-  display: flex;
-  margin: 20px auto;
-  max-width: 900px;
-}
-
-.front-end-skill h3,
-.back-end-skill h3{
-  border-right: var(--primary-color-lighten) 1px solid ;
-  padding: 10px;
-}
-
-table{
-  margin: 10px;
-}
-
-thead th{
-  font-family: var(--secondary-font);
-  text-align: left;
-  width: 80px;
-  margin: 0 4% 0 0;
-}
-
-tr :last-child{
-  width: 190px;
-}
-
-.tech-icon{
-  width: 90%;
-  margin: 30px auto;
+.tech-icons{
+  margin: 40px 0;
   border-radius: 30px;
 }
 
 .tech-icon__img {
-  width: 80px;
-  height: 80px;
-  margin: 8px;
+  width: 75px;
+  height: 75px;
+  margin: 8px 0;
   border-radius: 50%;
   backface-visibility: hidden;
   filter: drop-shadow(0 0 1rem grey);
@@ -340,7 +307,7 @@ tr :last-child{
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-  font-size: 16px;
+  font-size: var(--text-size);
   font-weight: 700;
 }
 
@@ -372,18 +339,19 @@ tr :last-child{
 }
 
 svg{
-  width: 60%;
-  margin: 0 20%;
+  width: 90%;
+  margin: 40px 5% 0 5%;
   box-shadow: var(--shadow);
   border-radius: 30px;
 }
 
 .SVGlegend{
+  margin: 2px 8%;
   padding-top: 1px;
   color: var(--grey);
   text-decoration: none;
-  margin: 0 21%;
-  font-size: 9px;
+  text-align: left;
+  font-size: var(--secondary-text-size);
 }
 
 /* /////////////////// */
@@ -483,7 +451,7 @@ svg{
 
 .error-message{
   color: red;
-  font-size: 12px;
+  font-size: var(--text-size);
   position: absolute;
   left: 0;
   right: 0;
@@ -522,7 +490,7 @@ footer {
 /* TABLET */
 @media all and (max-width: 1020px) {
   body{
-    font-size: 10pt;
+    font-size: var(--secondary-text-size);
   }
 
   .hideFromMobile{
@@ -554,17 +522,13 @@ footer {
     text-align: center;
   }
 
-  .about__table {
-    width: 100%;
-  }
-
-  .tech-icon{
-    margin: 20px auto;
+  .tech-icons{
+    margin: 40px 0;
   }
 
   .tech-icon__img {
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     margin: 4px;
   }
 
@@ -579,10 +543,9 @@ footer {
     transform: none;
   }
 
-  svg{
-    width: 70%;
-    margin: 0 15%;
-    font-size: 6;
+  .SVGlegend{
+    margin: 2px auto;
+    font-size: 7px;
   }
 
   .project-list {
@@ -616,7 +579,7 @@ footer {
   }
 
   .logo-name{
-    font-size: 9pt;
+    font-size: var(--secondary-text-size);
     line-height: 15px;
   }
 
@@ -648,7 +611,7 @@ footer {
   }
 
   .SVGlegend{
-    font-size: 7px;
+    font-size: 6px;
   }
 
   .work-container{
