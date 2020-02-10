@@ -1,5 +1,5 @@
 (function() {
-  
+
   // variables
   var $form = document.querySelector('#gform');
   var $emailInput = document.querySelector('#contact-email');
