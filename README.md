@@ -4,7 +4,7 @@ I wrote my own portfolio from scratch using only HTML5 without the aid of third 
 
 
 ## Screenshots
-![screenshot](https://alabugrara.com/img/website-portfolio-poster.png)
+![screenshot](https://alabugrara.com/img/poster-website-portfolio.png)
 
 
 ## Features
